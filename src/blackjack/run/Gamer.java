@@ -21,8 +21,7 @@ public class Gamer {
     public int point() {
         int sum = 0;
         for(int i=0; i<handSize(); i++) {
-            Card card = hand.get(i);
-            sum += card.point();
+            sum += hand.get(i).point();
         }
         return sum;
     }
